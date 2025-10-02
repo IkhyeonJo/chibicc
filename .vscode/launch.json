@@ -8,7 +8,7 @@
             "program": "${workspaceFolder}/chibicc",
             "args": [
                 "-o", 
-                "${workspaceFolder}/test/output.s",
+                "${workspaceFolder}/test/test",
                 "${workspaceFolder}/test/test.c"
             ],
             "stopAtEntry": false,
