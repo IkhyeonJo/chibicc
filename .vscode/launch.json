@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug chibicc",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/chibicc",
+            "args": [
+                "-o", 
+                "${workspaceFolder}/test/output.s",
+                "${workspaceFolder}/test/test.c"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "gdb pretty printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build"
+        }
+    ]
+}
